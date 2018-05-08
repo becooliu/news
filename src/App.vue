@@ -1,24 +1,19 @@
 <template>
   <div id="app">
       
-    <!-- <div class="tab">
+    <div class="tab">
           <div class="tab-header">
               <ul class="tab-list clearfix">
-                  <li v-for="item in tabList" class="list-item active" @click="checkFlagVal(index)"><span>精选<em class="coupon-num">(0)</em></span></li>
-                  <li class="list-item"><span>话题<em class="coupon-num">(0)</em></span></li>
-                  <li class="list-item"><span>作者<em class="coupon-num">(0)</em></span></li>
+                  <router-link tag="li" class="link-item"  v-for="(tab,index) in tabList" :to="{name: tab.to}"><span>{{tab.name}}</span></router-link>
+                  
               </ul>
           </div>
           <div class="tab-content-box">
-              <div class="content-item">
-    <img class="no-data" src="images/06.img1.png" alt="">
-  </div>
-              <div class="content-item">2</div>
-              <div class="content-item">3</div>
-              <div class="content-item">4</div>
-              <div class="content-item">5</div>    
+              <keep-alive>
+                <router-view></router-view>    
+              </keep-alive>
           </div>
-      </div> -->
+      </div>
   </div>
 </template>
 
@@ -26,11 +21,19 @@
 export default {
   name: 'App',
   data(){
-    return {"activeFlag": -1}
+    return {
+        tabList: [
+            {"name":"精选","to": "Special"},
+            {"name":"话题","to": "Topic"},
+            {"name":"作者","to": "Author"}
+        ],
+        cur: 0
+    }
   },
   methods: {
-    checkFlagVal(index){
-      this.activeFlag = index;
+    changeActive(index){
+        console.log(index);
+      this.cur = index;
     }
   }
 }
@@ -72,7 +75,7 @@ li {
                     width: 100%;
                     border-bottom: 2px solid transparent;
                 }
-                &.active {
+                &.router-link-exact-active{
                     span {
                         @include box-sizing;
                         border-bottom-color: #ff1435;
