@@ -28,6 +28,11 @@ export default new Router({
       path: '/author',
       name: 'Author',
       component: Author
+    },
+    {
+      path: '/*',
+      name: 'Special',
+      component: Special
     }
     
   ]

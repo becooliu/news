@@ -31,10 +31,7 @@ export default {
     }
   },
   methods: {
-    changeActive(index){
-        console.log(index);
-      this.cur = index;
-    }
+    
   }
 }
 </script>
@@ -45,6 +42,7 @@ export default {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   
