@@ -1,14 +1,14 @@
 <template>
   <div class="index-item clearfix">
-    <div class="item-list" v-for="(item,index) in s_data" :key="{index}" :artId='item.articleId' @click="giveData(item.articleId)">
-      <a href="#" class="clearfix">
+    <router-link class="item-list" v-for="(item,index) in s_data" :key="index" :artId='item.articleId' @click="giveData(item.articleId)" :to="{name: 'Detail',query: {id:item.articleId}}">
+      <a href="javascript:void(0);" class="clearfix">
         <div class="img" :style="{backgroundImage: 'url('+item.image+')'}"></div>
         <div class="text">
           <h3 class="title">{{item.title}}</h3>
           <h4 class="subTitle">{{item.subTitle}}</h4>
         </div>
       </a>
-    </div>
+    </router-link>
   </div>
 </template>
 
@@ -34,9 +34,9 @@ export default {
 		});
 	},
 	methods: {
-		/* giveData(id){
+		giveData(id){
 			this.$emit("artData",[{'artId':id}])
-		} */
+		}
 	}
 };
 </script>

@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Topic from '@/components/Topic'
 import Special from '@/components/Special'
 import Author from '@/components/Author'
+import Detail from '@/components/Detail'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/author',
       name: 'Author',
       component: Author
+    },
+    {
+      path: '/detail',
+      name: 'Detail',
+      component: Detail
     },
     {
       path: '/*',
