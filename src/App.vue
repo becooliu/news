@@ -4,7 +4,7 @@
     <div class="tab">
           <div class="tab-header">
               <ul class="tab-list clearfix">
-                  <router-link tag="li" class="link-item"  v-for="(tab,index) in tabList" :to="{name: tab.to}"><span>{{tab.name}}</span></router-link>
+                  <router-link tag="li" class="link-item"  v-for="(tab,index) in tabList" :to="{name: tab.to}" :key="index"><span>{{tab.name}}</span></router-link>
                   
               </ul>
           </div>

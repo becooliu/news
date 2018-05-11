@@ -4,7 +4,7 @@
       <a href="javascript:void(0);" class="clearfix">
         <div class="img" :style="{backgroundImage: 'url('+item.image+')'}"></div>
         <div class="text">
-          <h3 class="title">{{item.title}}</h3>
+          <h3 class="title">{{item.articleTitle}}</h3>
           <h4 class="subTitle">{{item.subTitle}}</h4>
         </div>
       </a>
@@ -26,8 +26,8 @@ export default {
 	mounted() {
 		let _this = this
 		this.$nextTick().then(function() {
-			_this.$http.get('/static/special/s_data.json').then(function(response){
-				if(response.data.status === 0) {
+			_this.$http.get('/static/detail/d_data.json').then(function(response){
+				if(response.data.status == "success") {
 					this.s_data = response.data.result;
 				}
 			})
