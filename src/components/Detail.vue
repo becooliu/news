@@ -60,20 +60,20 @@
 .detail-box {
     font-family: "Microsoft Yahei";
     .title-box {
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem;
         .title {
-            font-size: 16px;
+            font-size: 1.6rem;
             color: #333;
-            line-height: 24px;
+            line-height: 2.4rem;
             text-align: center;
         }
         .created {
-            font-size: 12px;
+            font-size: 1.2rem;
             color: #666;
-            line-height: 20px;
+            line-height: 2rem;
         }
         hr {
-            height: 1px;
+            height: 0.1rem;
             background-color: #999;
         }
     }
@@ -81,16 +81,16 @@
         text-align: center;
         p {
             text-align: left;
-            line-height: 24px;
-            font-size: 14px;
+            line-height: 2rem;
+            font-size: 1.4rem;
             color: #666;
-            margin-bottom: 15px;
+            margin-bottom: 1.5rem;
         }
         img {
             display: inline-block;
             width: auto;
             max-width: 100%;
-            margin: 0 auto 15px;
+            margin: 0 auto 1.5rem;
         }
     }
 }

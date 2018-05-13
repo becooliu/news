@@ -24,7 +24,6 @@ var vm = new Vue({
     this.$nextTick(function(){
       this.$http.get('/static/tabData.json').then(function(response){
         this.tabList = response.data;
-        console.log(this.tabList);
       })
     })
   }

@@ -59,33 +59,35 @@ $color-inverse: #fff;
     }
 }
 .index-item {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   .item-list {
-    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1rem;
     box-sizing: border-box;
 	background: $color-inverse;
 	@include clearfix;
     > a {
 		display: inline-block;
       > .img {
-        margin-bottom: 8px;
+        margin-bottom: 0.8ren;
         float: left;
-        width: 106px;
-        height: 106px;
+        width: 10.6rem;
+        height: 10.6rem;
         @include bg-options;
       }
       .text {
         float: left;
         width: 70%;
         box-sizing: border-box;
-        padding-top: 20px;
-        padding-left: 6px;
+        padding-top: 2rem;
+        padding-left: 0.6rem;
         .title {
           color: #333;
-          font-size: 18px;
+          font-size: 1.8rem;
           font-weight: normal;
-          margin-bottom: 8px;
+          margin-bottom: 0.8rem;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
@@ -93,8 +95,8 @@ $color-inverse: #fff;
         .subTitle {
           color: #666;
           font-weight: normal;
-          line-height: 20px;
-          font-size: 14px;
+          line-height: 2rem;
+          font-size: 1.4rem;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;

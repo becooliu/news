@@ -37,6 +37,10 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+    font-size: 10px;
+    font-size: 62.5rem;
+}
 @mixin box-sizing {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -50,14 +54,15 @@ export default {
 ul,
 li {
   list-style: none;
+  padding-left: 0;
 }
 .tab {
     font-family: "Microsoft Yahei";
     .tab-header {
-        height: 36px;
-        line-height: 36px;
-        margin-left: -10px;
-        margin-right: -10px;
+        height: 3.6rem;
+        line-height: 3.6rem;
+        /* margin-left: -10px;
+        margin-right: -10px; */
         .tab-list {
             display: flex;
             justify-content: space-around;
@@ -71,7 +76,7 @@ li {
                 span {
                     display: inline-block;
                     width: 100%;
-                    border-bottom: 2px solid transparent;
+                    border-bottom: 0.2rem solid transparent;
                 }
                 &.router-link-exact-active{
                     span {
@@ -83,7 +88,7 @@ li {
         }
     }
     .tab-content-box {
-        margin-top: 2px;
+        margin-top: 0.2rem;
         .content-item {
             display: none;
             position: relative;
