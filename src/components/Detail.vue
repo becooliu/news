@@ -6,10 +6,7 @@
         <hr />
     </div>
     <div class="content-box" v-html="a_detail.content">
-        <p class="detail">明月几时有？把酒问青天。不知天上宫阙，今夕是何年。我欲乘风归去，又恐琼楼玉宇，高处不胜寒。起舞弄清影，何似在人间？
-        </p>
-        <img src="images/01.01.jpg" alt="">
-        <p class="detail">天空这个巨大斜坡从北面那片大陆一直延伸过来，弦窗外，自由以蔚蓝色的名义辽阔无边</p>
+        
     </div>
 </div>
 </template>
