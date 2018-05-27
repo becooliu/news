@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import VueResource from 'vue-resource'
 import Special from '@/components/Special'
+import store from './store'
 
 Vue.config.productionTip = false
 Vue.use(VueResource)
@@ -15,6 +16,7 @@ var vm = new Vue({
   router,
   components: { App },
   template: '<App/>',
+  store,
   data(){
     return {
       tabList: ''

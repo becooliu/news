@@ -1,0 +1,19 @@
+{
+    "status": "success",
+    "result": [
+        {
+            "topicTitle": "针对近期滴滴的整改，你认为对出行安全是否有帮助？",
+            "checkOne": [
+                {"id":1,"title":"有帮助", "val": "yes", "checked": 0},
+                {"id":2,"title":"然并卵", "val": "no", "checked": 0}
+            ]
+        },
+        {
+            "topicTitle": "国产艘航母海试成功，对中国海军战斗力提升是否有用？",
+            "checkOne": [
+                {"id":3,"title":"有帮助", "val": "yes", "checked": 0},
+                {"id":4,"title":"然并卵", "val": "no", "checked": 0}
+            ]
+        }
+    ]
+}
